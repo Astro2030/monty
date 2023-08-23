@@ -31,7 +31,7 @@ typedef struct stack_s
  * Description: carries values through the program
  */
 typedef struct buff_s
-i{
+{
 	char *arg;
 	FILE *file;
 	char *content;

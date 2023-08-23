@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 	monty_file = fopen(argv[1], "r");
-	buf.monty_file = monty_file;
+	buf.file = monty_file;
 	if (!monty_file)
 	{
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 	{
 		line_content = NULL;
 		read_line = getline(&line_content, &line_size, monty_file);
-		buf.line_content = line_content;
+		buf.content = line_content;
 		line_counter++;
 		if (read_line > 0)
 		{
