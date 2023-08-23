@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 	while (read_line > 0)
 	{
 		line_content = NULL;
-		read_line = getline(&line_content, &line_size, monty_file);
+		read_line = custom_getline(&line_content, &line_size, monty_file);
 		buf.content = line_content;
 		line_counter++;
 		if (read_line > 0)
