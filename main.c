@@ -1,6 +1,6 @@
 #include "monty.h"
 
-buff_t buf{NULL, NULL, NULL, 0};
+buff_t buf = {NULL, NULL, NULL, 0};
 
 /**
 * main - monty code interpreter
