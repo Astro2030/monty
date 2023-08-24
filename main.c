@@ -1,11 +1,14 @@
 #include "monty.h"
-buff_t buf = {NULL, NULL, NULL, 0};
+
+buff_t buf{NULL, NULL, NULL, 0};
+
 /**
 * main - monty code interpreter
 * @argc: number of arguments
 * @argv: monty file location
 * Return: 0 on success
 */
+
 int main(int argc, char *argv[])
 {
 	char *line_content;

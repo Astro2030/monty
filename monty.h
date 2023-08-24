@@ -1,5 +1,6 @@
 #ifndef MONTY_H
 #define MONTY_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -26,7 +27,7 @@ typedef struct stack_s
 } stack_t;
 
 /**
- * struct bus_s - variables -args, file, line content
+ * struct buff_s - variables -args, file, line content
  * @arg: value
  * @file: pointer to monty file
  * @content: line content
@@ -43,6 +44,7 @@ typedef struct buff_s
 }  buff_t;
 
 extern buff_t buf;
+
 /**
  * struct instruction_s - opcode and its function
  * @opcode: the opcode
